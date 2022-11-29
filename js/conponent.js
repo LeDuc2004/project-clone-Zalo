@@ -5,7 +5,7 @@ conponent.registerPage = `
     <form action="" id="registerForm">
 
         <div class="cha">
-            <div><img style="width:150px" src="/imge/Zalo_logo_2019.svg.png" alt=""></div>
+            <div><img style="width:150px" src="/imge/2019.svg.png" alt=""></div>
         <div style="display:flex ;width: 100%;justify-content: center;">
             <div style="width:22% ;margin-right:-16px ;">
                 <input style="max-width:70%"  name="firstName"  id="tk" type="text" placeholder="Họ..." >
@@ -52,7 +52,7 @@ conponent.loginPage = `
 <form action="" id="loginForm">
 
 <div class="cha">
-    <div><img style="width:150px" src="/imge/Zalo_logo_2019.svg.png" alt=""></div>
+    <div><img style="width:150px" src="/imge/2019.svg.png" alt=""></div>
 <div style="display:flex ;width: 100%;justify-content: center;">
  
 </div>
