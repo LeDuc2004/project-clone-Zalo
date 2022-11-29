@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+}
+body{
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+
+.cha span{
+    position: absolute;
+    top: 0;
+   
+    
+}
+.cha{
+    line-height: 3.5;
+    background-color: rgba(211, 211, 211, 0.9);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    margin-left: 30%;
+    margin-top: 10%;
+    border-radius: 5px;
+   
+}
+.cha i{
+position: absolute;
+z-index: 999;
+right: 73px;
+margin-top: 20px;
+color: gray;
+}
+
+.cha input{
+    position: relative;
+    outline: none;
+    padding-left: 20px;
+    height: 35px;
+    width: 350px;
+    margin-top: 20px;
+}
+#btnsuccess{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+#success{
+    margin-top: 20px;
+    line-height: normal;
+}
