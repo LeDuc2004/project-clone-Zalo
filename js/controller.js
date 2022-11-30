@@ -443,6 +443,7 @@ function blueborder() {
   });
 }
 function takeInfoObj(email, i) {
+
   let getfriend = document.querySelectorAll(".friend");
   getfriend.forEach((item) => {
     item.setAttribute("style", "background-color:");
@@ -452,10 +453,41 @@ function takeInfoObj(email, i) {
 localStorage.setItem("bothEmail", `${email}${auth.currentUser.email}`)
 localStorage.setItem("bothEmailReverse", `${auth.currentUser.email}${email}`)
 
+model.getChat() 
 
 
+setTimeout(() => {
+   if (Number(localStorage.getItem("width")) <= 800) {
+    document.getElementById("table1").style.display = ""
+    document.getElementById("divlistban").style.display = "none"
+    
+  }
+  if (Number(localStorage.getItem("width")) == 1024) {
 
-model.getChat()
+    
+  }
+  
+}, 0);
+
+}
+$(window).resize(function(){
+ 
+ 
+  var width = $(window).width();
+localStorage.setItem("width",`${width}`)
+
+
+   
+});
+function okchat() {
+  if (Number(localStorage.getItem("width")) < 1024) {
+
+    
+ 
+  document.getElementById("table1").style.display = "none"
+  document.getElementById("divlistban").style.display = ""
+  document.getElementById("taikhoan").style.display = "none"
+ }
 }
 
 

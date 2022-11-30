@@ -113,7 +113,7 @@ conponent.wellcomePage = `
           </div>
           <div id="thongtintren" >
             <div id="idName" class="ok avatar" onclick="avatar()"   style="width:48px;height:48px;margin-left: 8px;margin-bottom: 20px;"></div>
-            <div class="ok chat" ><i class="fa-solid fa-comment-dots"></i></div>
+            <div onclick="okchat()" class="ok chat" ><i class="fa-solid fa-comment-dots"></i></div>
             <div class="ok danhba" onclick="clickevw()"><i class="fa-regular fa-address-book"></i></div>
             <div class="ok nhiemvu" onclick="clickevw()"><i class="fa-solid fa-square-check"></i></div>
           </div>
@@ -175,10 +175,9 @@ conponent.wellcomePage = `
               />
             
         
-            <span style="margin-left: 76%;padding-left: 35px;"><i class="fa-solid fa-circle-plus"></i></span>
+            <span id="plubss"><i class="fa-solid fa-circle-plus"></i></span>
             <span><i class="fa-regular fa-image"></i></span>
              <span id="icon111" style="display:block" onclick="tableIcon()" ><i class="fa-solid fa-face-smile"></i></span>
-             <span id="icon1111" style="display:none" onclick="tableIcon1()" ><i class="fa-solid fa-face-smile"></i></span>
             <span
             style="padding-right: 10px;"
                 onclick="btnChat()"

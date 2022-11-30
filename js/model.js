@@ -147,7 +147,7 @@ model.getChat = async () => {
 };
 
 
-  setInterval(model.getChat, 1000);
+ 
 
 
 

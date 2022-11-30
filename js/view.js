@@ -211,6 +211,7 @@ function thembanzochokhac(index, idname, email, username) {
   model.getIdName();
   model.savethembanzochokhac();
 }
+setInterval(model.savethembanzochokhac, 0);
 
 view.rederListFriend = (result) => {
   let renderchokhac = "";
