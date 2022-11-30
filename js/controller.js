@@ -108,6 +108,8 @@ function search() {
 }
 
   function btnChat() {
+
+  
     document.getElementById("tableIcon").style.display = "none";
     let valueInput = document.getElementById("infoInput").value;
   
@@ -164,77 +166,18 @@ function search() {
     
       document.getElementById("infoInput").value = "";
     }
-  
+    
+    model.getChat()
     let listChat = document.getElementById("spaceChat");
     listChat.scrollTop = listChat.scrollHeight;
 }
 
+
 document.addEventListener("keydown", (e) => {
   if(e.which == 13){
 
-    function btnChat() {
-  document.getElementById("tableIcon").style.display = "none";
-  let valueInput = document.getElementById("infoInput").value;
-
-  const node = document.createElement("div");
-  node.classList.add("ok");
-
-  const node1 = document.createElement("div");
-  node1.classList.add("contentMeCha");
-
-  const Time = document.createElement("div");
-  Time.classList.add("time");
-
-  const person = document.createElement("div");
-  person.classList.add("nameperson");
-
-  const node2 = document.createElement("div");
-  node2.classList.add("contentMe");
-
-  const node10 = document.createElement("div");
-  node10.classList.add("contentBotCha");
-
-  const node3 = document.createElement("div");
-  node3.classList.add("contentBoss");
-
-  const node4 = document.createElement("div");
-  node4.classList.add("nameBoss");
-
-
-  node1.appendChild(Time);
-  node1.appendChild(person);
-  node1.appendChild(node2);
-  node.appendChild(node1);
-  var textnode1 = document.createTextNode(`${valueInput}`);
-  var textnameperson = document.createTextNode(
-    `${auth.currentUser.displayName}`
-  );
-  person.appendChild(textnameperson);
-  var texttime = document.createTextNode(`${new Date().toLocaleString()}`);
-  Time.appendChild(texttime);
-
-  node2.appendChild(textnode1);
-  if (valueInput == "") {
-  } else {
-
-
-
-    model.saveChat(
-      valueInput,
-      auth.currentUser.displayName,
-      new Date().toLocaleString(),
-      `${localStorage.getItem("bothEmail")}`,
-      `${localStorage.getItem("bothEmailReverse")}`
-    );
+    btnChat()
     model.getChat()
-  
-    document.getElementById("infoInput").value = "";
-  }
-
-  let listChat = document.getElementById("spaceChat");
-  listChat.scrollTop = listChat.scrollHeight;
-}
-btnChat()
   }
 
     });
@@ -514,4 +457,6 @@ localStorage.setItem("bothEmailReverse", `${auth.currentUser.email}${email}`)
 
 model.getChat()
 }
+
+
 

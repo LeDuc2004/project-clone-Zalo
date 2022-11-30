@@ -112,6 +112,14 @@ model.saveChat = (data, dataname, time ,bothEmail,bothEmailReverse) => {
 };
 
 model.getChat = async () => {
+  if(localStorage.getItem("bothEmail") == "loichaocuazalo"){
+    document.getElementById("table1").style.display = "none"
+    document.getElementById("table").style.display = ""
+  
+  }else{
+    document.getElementById("table1").style.display = ""
+    document.getElementById("table").style.display = "none"
+  }
   try {
     let response = await firebase
       .firestore()
@@ -121,6 +129,7 @@ model.getChat = async () => {
     let result = response.data().message;
 
     view.renderList(result);
+    
   } catch (error) {
     try {
       let response = await firebase
@@ -136,7 +145,11 @@ model.getChat = async () => {
     }
   }
 };
-model.getChat()
+
+
+  setInterval(model.getChat, 1000);
+
+
 
 
 model.getIdName = async () => {

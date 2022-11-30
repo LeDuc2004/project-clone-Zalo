@@ -3,7 +3,7 @@ window.onload = () => {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       view.setScreenActive("wellcomePage");
-      
+
         
      
     } else {
@@ -12,13 +12,17 @@ window.onload = () => {
   });
 firebase.firestore().collection("listMessage").doc(`${localStorage.getItem("bothEmail")}`)
 .onSnapshot((doc)=>{
+ 
   view.renderList(doc.data().message)
-  model.getChat()
+
+
 })
 firebase.firestore().collection("listMessage").doc(`${localStorage.getItem("bothEmailReverse")}`)
 .onSnapshot((doc)=>{
+  
+
   view.renderList(doc.data().message)
-  model.getChat()
+
 })
 
 firebase.firestore().collection("idName").doc("vGtlozg2ODnWYyeMp04E")

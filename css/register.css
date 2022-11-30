@@ -54,3 +54,11 @@ color: gray;
     margin-top: 20px;
     line-height: normal;
 }
+.Zalo{
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    height: 100px;
+    line-height: 2;
+    font-weight: 500;
+}

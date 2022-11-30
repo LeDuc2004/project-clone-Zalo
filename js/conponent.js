@@ -5,7 +5,7 @@ conponent.registerPage = `
     <form action="" id="registerForm">
 
         <div class="cha">
-            <div><img style="width:150px" src="/imge/2019.svg.png" alt=""></div>
+            <div class="Zalo">Zalo</div>
         <div style="display:flex ;width: 100%;justify-content: center;">
             <div style="width:22% ;margin-right:-16px ;">
                 <input style="max-width:70%"  name="firstName"  id="tk" type="text" placeholder="Họ..." >
@@ -13,21 +13,21 @@ conponent.registerPage = `
             <div style="margin:0px 10px;margin-top:10px;margin-left:25px">và</div>
             <div style="width:40%;margin-right: 25px; " >
                 <input style="max-width:70% " name="lastName"  id="tk" type="text" placeholder="Tên..." ><br>
-               <em> <span  style="color:red;top:150px;left:80px" id="spantk"></span></em>  
+               <em> <span  style="color:red;top:160px;left:80px" id="spantk"></span></em>  
             </div> 
         </div>
             <div >
-                <i  style="cursor:pointer ;top: 183px;" class="fa-solid fa-envelope"></i>
+                <i  style="cursor:pointer ;top: 195px;" class="fa-solid fa-envelope"></i>
                 <input name="email"  id="email"  type="text" placeholder="email..."><br>
-                <em><span  style="color:red;top:218px;left:80px" id="spanemail"></span></em>
+                <em><span  style="color:red;top:228px;left:80px" id="spanemail"></span></em>
             </div>
             <div >
-                <i  style="cursor:pointer ;top: 250px;" id="icon" onclick="showPassword()" class="fa-solid fa-eye"></i>     
+                <i  style="cursor:pointer ;top: 262px;" id="icon" onclick="showPassword()" class="fa-solid fa-eye"></i>     
                 <input name="password"  id="mk" type="password" placeholder="mật khẩu"><br>
-                <em><span  style="color:red;top:288px;left:80px"  id="spanmk"></span></em>
+                <em><span  style="color:red;top:298px;left:80px"  id="spanmk"></span></em>
                 </div>
               <div >
-                <i  style="cursor:pointer ;top: 318px;" id="iconClose" onclick="showConfirmPassword()" class="fa-solid fa-eye"></i>
+                <i  style="cursor:pointer ;top: 328px;" id="iconClose" onclick="showConfirmPassword()" class="fa-solid fa-eye"></i>
                 <input name="confirmPassword"   id="remk" type="password" placeholder="xác nhận mật khẩu"><br>
                <em><span  style="color:red;top:350px;left:80px" id="spanremk"></span> </em>
                </div> 
@@ -52,19 +52,19 @@ conponent.loginPage = `
 <form action="" id="loginForm">
 
 <div class="cha">
-    <div><img style="width:150px" src="/imge/2019.svg.png" alt=""></div>
+<div class="Zalo">Zalo</div>
 <div style="display:flex ;width: 100%;justify-content: center;">
  
 </div>
     <div >
-        <i  style="cursor:pointer ;top: 183px;" class="fa-solid fa-envelope"></i>
+        <i  style="cursor:pointer ;top: 195px;" class="fa-solid fa-envelope"></i>
         <input name="email"  id="email"  type="text" placeholder="email..."><br>
-        <em><span  style="color:red;top:218px;left:80px" id="spanemail"></span></em>
+        <em><span  style="color:red;top:228px;left:80px" id="spanemail"></span></em>
     </div>
     <div >
-        <i  style="cursor:pointer ;top: 250px;" id="icon" onclick="showPassword()" class="fa-solid fa-eye"></i>     
+        <i  style="cursor:pointer ;top: 262px;" id="icon" onclick="showPassword()" class="fa-solid fa-eye"></i>     
         <input name="password"  id="mk" type="password" placeholder="mật khẩu"><br>
-        <em><span  style="color:red;top:284px;left:80px"  id="spanmk"></span></em>
+        <em><span  style="color:red;top:294px;left:80px"  id="spanmk"></span></em>
         </div>
 
     <div id="btnsuccess"> 
@@ -149,9 +149,15 @@ conponent.wellcomePage = `
         
         
         
+        <div id="table" style="display:none">
+          <div id="chaomung">Chào mừng đến với <strong style="font-weight: 500;">Zalo PC!</strong></div>
+          <div style="font-size:14px;margin-top:15px">Khám phá những tiện ích hỗ trợ làm việc và trò chuyện cùng<br><div style="margin-left: 10px;">người thân, bạn bè được tối ưu hóa cho máy tính của bạn</div></div>
+          <div><img src="./imge/quick-message-onboard.3950179c175f636e91e3169b65d1b3e2.png" alt=""></div>
+          <div id="chuxanh">Nhắn tin nhiều hơn, soạn thảo ít hơn</div>
+          <div style="font-size:14px;margin-top:15px;text-align:center">Sử dụng tin nhắn nhanh để lưu sẵn các tin thường dùng và gửi nhanh trong hội thoại bất kỳ.</div>
+        </div>
         
-        
-        <div id="table" onclick="clickevw()">
+        <div id="table1" style="display:block" onclick="clickevw()">
           <div id="title" style="display: flex; justify-content: space-between"></div>
           <div id="spaceChat"  class="list-content"></div>
 
